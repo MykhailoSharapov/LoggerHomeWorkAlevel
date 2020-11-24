@@ -8,6 +8,8 @@ namespace LoggerHomeWorkAlevel
 {
     class Actions
     {
+        Logger log = Logger.GetInstance();
+
         public void MethodFirst()
         {
             Console.WriteLine(Logger.NewMessage(GlobalConstant.Info, "Start method:"));
