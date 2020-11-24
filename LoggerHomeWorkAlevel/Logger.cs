@@ -31,7 +31,7 @@ namespace LoggerHomeWorkAlevel
             return result;
         }
 
-        public  string NewMessage(string MessageLevel, string Message)
+        public string NewMessage(string MessageLevel, string Message)
         {
             string result = $"{MessageLevel}, Message: {Message}";
             LogMessages.Add(result);

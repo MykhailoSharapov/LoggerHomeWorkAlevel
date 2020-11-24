@@ -14,7 +14,7 @@ namespace LoggerHomeWorkAlevel
             Random rand = new Random();
             Actions act = new Actions();
             Logger log = Logger.GetInstance();
-            
+
             for (int i = 0; i < 100; i++)
             {
                 try
