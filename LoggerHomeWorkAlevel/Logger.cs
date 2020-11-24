@@ -40,7 +40,7 @@ namespace LoggerHomeWorkAlevel
 
         public static void SaveLogFile()
         {
-            File.AppendAllLines(DateTime.Now.ToString() + ".txt", LogMessages);
+            File.AppendAllLines(DateTime.Now.Ticks.ToString() + ".txt", LogMessages);
         }
     }
 }

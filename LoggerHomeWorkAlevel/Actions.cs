@@ -10,11 +10,12 @@ namespace LoggerHomeWorkAlevel
     {
         public void MethodFirst()
         {
-            Logger.NewMessage(GlobalConstant.Info, "Start method:");
+            Console.WriteLine(Logger.NewMessage(GlobalConstant.Info, "Start method:"));
+            
         }
         public void MethodSecond()
         {
-            Logger.NewMessage(GlobalConstant.Warning, "Skipped logic in method:");
+            Console.WriteLine(Logger.NewMessage(GlobalConstant.Warning, "Skipped logic in method:"));
         }
         public void MethodThird()
         {
