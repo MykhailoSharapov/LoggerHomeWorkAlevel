@@ -26,7 +26,7 @@ namespace LoggerHomeWorkAlevel
 
         public string NewMessage(string MessageLevel, Exception ex)
         {
-            string result = $"{MessageLevel}, stack trace: {ex.StackTrace}, error message: {ex.Message}";
+            string result = $"{MessageLevel}, Action failed by reason: {ex.StackTrace}";
             LogMessages.Add(result);
             return result;
         }
