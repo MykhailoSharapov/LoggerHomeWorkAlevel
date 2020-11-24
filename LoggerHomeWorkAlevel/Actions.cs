@@ -8,19 +8,22 @@ namespace LoggerHomeWorkAlevel
 {
     class Actions
     {
-        Logger log = Logger.GetInstance();
+        
 
         public void MethodFirst()
         {
-            Console.WriteLine(Logger.NewMessage(GlobalConstant.Info, "Start method:"));
+            Logger log = Logger.GetInstance();
+            Console.WriteLine(log.NewMessage(GlobalConstant.Info, "Start method:"+nameof(MethodFirst)));
             
         }
         public void MethodSecond()
         {
-            Console.WriteLine(Logger.NewMessage(GlobalConstant.Warning, "Skipped logic in method:"));
+            Logger log = Logger.GetInstance();
+            Console.WriteLine(log.NewMessage(GlobalConstant.Warning, "Skipped logic in method:"+nameof(MethodSecond)));
         }
         public void MethodThird()
         {
+            
             throw new Exception("I broke a toilet");
         }
     }

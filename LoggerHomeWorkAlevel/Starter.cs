@@ -13,7 +13,8 @@ namespace LoggerHomeWorkAlevel
 
             Random rand = new Random();
             Actions act = new Actions();
-
+            Logger log = Logger.GetInstance();
+            
             for (int i = 0; i < 100; i++)
             {
                 try
@@ -34,10 +35,10 @@ namespace LoggerHomeWorkAlevel
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(Logger.NewMessage(GlobalConstant.Error, ex));
+                    Console.WriteLine(log.NewMessage(GlobalConstant.Error, ex));
                 }
             }
-            Logger.SaveLogFile();
+            log.SaveLogFile();
 
         }
     }

@@ -24,21 +24,21 @@ namespace LoggerHomeWorkAlevel
             return instance;
         }
 
-        public static string NewMessage(string MessageLevel, Exception ex)
+        public string NewMessage(string MessageLevel, Exception ex)
         {
             string result = $"{MessageLevel}, stack trace: {ex.StackTrace}, error message: {ex.Message}";
             LogMessages.Add(result);
             return result;
         }
 
-        public static string NewMessage(string MessageLevel, string Message)
+        public  string NewMessage(string MessageLevel, string Message)
         {
             string result = $"{MessageLevel}, Message: {Message}";
             LogMessages.Add(result);
             return result;
         }
 
-        public static void SaveLogFile()
+        public void SaveLogFile()
         {
             File.AppendAllLines(DateTime.Now.Ticks.ToString() + ".txt", LogMessages);
         }

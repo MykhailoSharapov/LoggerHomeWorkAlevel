@@ -9,7 +9,7 @@ namespace LoggerHomeWorkAlevel
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             new Starter().Run();
             Console.ReadLine();
         }
