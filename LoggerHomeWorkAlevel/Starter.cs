@@ -10,7 +10,6 @@ namespace LoggerHomeWorkAlevel
     {
         public void Run()
         {
-
             Random rand = new Random();
             Actions act = new Actions();
             Logger log = Logger.GetInstance();
